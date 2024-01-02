@@ -1,0 +1,35 @@
+version: 2
+
+models:
+  - name: int_erp__enderecos
+    description : Essa é uma transformação intermediaripara a dimensão local.
+    columns:
+      - name: sk_estado_provincia
+        description: Essa é a chave unica da tabela junção id estado o com o codigo estado provincia.
+        tests:
+          - unique
+          - not_null
+
+      - name: id_estado
+        description: Essa é a chave unica da tabela stateprovince.
+        tests:
+            - unique
+            - not_null
+
+      - name: id_territorio
+        description: Essa é a chave unica da tabela stateprovince.
+        tests:
+            - not_null
+                
+
+      - name: Codigo_pais_regiao
+        description: Essa é a coluna da tabela stg_countryregion.
+        
+      - name: nome_do_pais_regiao
+        description: Essa é a coluna da tabela stg_countryregion.
+        
+      - name: codigo_estado_provincia
+        description: Essa é a coluna da tabela stateprovince.
+        
+      - name: nome_estado_provicia
+        description: Essa é a coluna da tabela stateprovince.
