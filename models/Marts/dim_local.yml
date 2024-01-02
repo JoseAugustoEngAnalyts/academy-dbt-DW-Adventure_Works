@@ -1,0 +1,59 @@
+version: 2
+
+models:
+  - name: dim_local
+    description : Essa é a dimensão local.
+    columns:
+      - name: pk_endereco
+        description: Essa é a chave unica da tabela dimensao.
+        tests:
+          - unique
+          - not_null
+
+      - name: id_endereco
+        description: Essa é a chave unica da tabela address.
+        tests:
+            - unique
+            - not_null
+
+      - name: id_estado
+        description: Essa é a chave unica da tabela stg_address.
+        
+      - name: sk_estado_provincia
+        description: Essa é a chave unica da tabela junção id estado o com o codigo estado provincia.
+          
+      - name: id_territorio
+        description: Essa é a chave unica da tabela stateprovince.
+        tests:
+            - not_null 
+                
+      - name: rua
+        description: Essa é a coluna da tabela stg_address.
+        
+      - name: rua_1
+        description: Essa é a coluna da tabela stg_address.
+        
+      - name: cidade
+        description: Essa é a coluna da tabela stg_addresss.
+        
+      - name:  codigo_postal
+        description: Essa é a coluna da tabela stg_address.
+      
+       
+      - name : codigo_estado_provincia
+        description: Essa é a coluna da tabela int_endereco.
+
+      - name : nome_estado_provincia
+        description: Essa é a coluna da tabela int_endereco.
+
+      - name : Codigo_pais_regiao
+        description: Essa é a coluna da tabela int_endereco.
+
+      - name : nome_do_pais_regiao
+        description: Essa é a coluna da tabela int_endereco.
+
+      - name : chave
+        description: Essa é a coluna da tabela stg_address.
+
+       
+        

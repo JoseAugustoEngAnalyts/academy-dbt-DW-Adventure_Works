@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: erp
+    description: Fonte do SAP da Empresa Adventure Works
+    schema: sap_adw
+    tables:
+      - name: address
+      - name: countryregion
+      - name: stateprovince
+      - name: salesterritory
+      - name: customer
+      
