@@ -10,4 +10,6 @@ sources:
       - name: stateprovince
       - name: salesterritory
       - name: customer
+      - name: creditcard
+      - name: personcreditcard
       

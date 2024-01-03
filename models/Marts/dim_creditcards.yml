@@ -1,0 +1,33 @@
+version: 2
+
+models:
+  - name: dim_creditcards
+    description : Essa é a dimensão de cartão de credito.
+    columns:
+      - name: pk_cartao_de_credito
+        description: Essa é a chave unica da tabela dimensao.
+        tests:
+          - unique
+          - not_null
+      
+      - name: id_cartao_de_credito
+        description: Essa é a chave unica da tabela dimensao.
+        tests:
+          - unique
+          - not_null
+
+      - name: tipo_de_cartao
+        description: Essa é a coluna oriunda da tabela stg_creditcards.
+
+      - name: numero_do_cartao
+        description: Essa é a coluna oriunda da tabela stg_creditcards.
+
+      - name: gasto_mensal
+        description: Essa é a coluna oriunda da tabela stg_creditcards.
+
+      - name: ano_expedicao 
+        description: Essa é a coluna oriunda da tabela stg_creditcards.
+
+      - name: entidade_de_negocio
+        description: Essa é a coluna oriunda da tabela stg_personcreditcards.
+
